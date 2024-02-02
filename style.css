@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+:root{
+    /*fonts*/
+    --font-family: 'figtree',sans-serif;
+    --font-size: 16px;
+    --font-weight-normal:600;
+    --font-weight-bold:800;
+    /*colors*/
+    --Yellow:hsl(47, 88%, 63%);
+    --White:hsl(0, 0%, 100%);
+    --Grey:hsl(0, 0%, 50%);
+    --Black:hsl(0, 0%, 7%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Yellow);
+    color: var(--Black);   
+}
+#card {
+    width: 300px;
+    height: 400px;
+    background-color: var(--White);
+    border-radius: 15px;
+    border-style:solid;
+    border-width: 1px 5px 5px 1px;
+    padding: 20px 12px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+#card > img:first-child {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    border-radius:10px ;
+}
+#card> h5{
+    height: 25px;
+    width: 80px;
+    background-color: var(--Yellow);
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 18px;
+    margin-left: 8px;
+    padding: 3px;
+}
+#card>h6{
+    margin-left: 8px;
+    margin-top: 12px;
+    font-weight: var(--font-weight-normal);
+}
+#card>h3{
+    margin-top: 12px;
+    margin-left:8px;
+    font-weight: var(--font-weight-bold);
+}
+#card>p {
+    margin-top: 12px;
+    margin-left:8px;
+    font-size: 12px;
+    color: var(--Grey);
+}
+#card>img{
+    margin-top: 17px;
+    margin-left:8px;
+    width: 11%;
+}
+#card>h4{
+    margin-top: -27px;
+    margin-left:48px;
+    font-size:12px ;
+}
+@media (max-width: 400px){
+    card{
+      width: 88%;
+      height: 520px;
+    }
+  }
